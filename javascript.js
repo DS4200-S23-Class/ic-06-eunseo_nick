@@ -1,3 +1,3 @@
 function changecolor(){  
- alert("Hello Eunseo!");  
+ alert("Hello Grader!");  
 }  
