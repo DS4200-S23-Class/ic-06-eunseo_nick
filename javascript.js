@@ -1,5 +1,5 @@
 function changeColor(color) {
- line.body.style.background = color;
+ document.body.style.background = color;
         }
           
 function changeColorButton() {
