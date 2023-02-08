@@ -1,21 +1,12 @@
-// Event Handler For Click
-function submitClicked() {
-  
-  let vals = document.getElementsByTagName("input");
-  
-  console.log(vals.length);
-  
-  for (let i = 0; i < vals.length; i++){
-    
-   
-      if(vals[i].checked) {
-        console.log(vals[i].value);
-        
-        let newText = "Selected Vis: " + vals[i].value;
-        document.getElementById("selected-vis").innerHTML = newText;
-      }
-  }
-}
+// 1. Create the button
+var button = document.createElement("button");
+button.innerHTML = "Do Something";
 
-document.getElementById("subButton")
-        .addEventListener("click", submitClicked);
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  alert("did something");
+});
